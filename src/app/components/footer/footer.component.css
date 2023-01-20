@@ -1,0 +1,18 @@
+footer {
+  background-color: #333652;
+  font-family: 'Bakbak One', cursive;
+  text-align: center;
+  color: #e9eaec;
+  padding-bottom: 20px;
+}
+
+
+img {
+  width: auto;
+  height: 150px;
+}
+
+p {
+  font-size: 13px;
+
+}

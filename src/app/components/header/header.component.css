@@ -1,0 +1,34 @@
+header {
+  background-color: #333652;
+  font-family: 'Bakbak One', cursive;
+}
+
+.container {
+
+  height: 100px;
+}
+
+img {
+  width: auto;
+  height: 100px;
+}
+
+nav {
+
+  padding-top: 35px;
+  font-size: x-large;
+}
+
+.items li {
+  display: inline;
+  color: #e9eaec;
+}
+
+a {
+  text-decoration: none;
+  color: #e9eaec;
+}
+
+a:hover {
+  color: #c6c6c6;
+}
