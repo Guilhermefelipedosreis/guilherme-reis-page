@@ -5,18 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AboutComponent } from './components/main/about/about.component';
 import { ProjectsComponent } from './components/main/projects/projects.component';
 import { ResumeComponent } from './components/main/resume/resume.component';
+import { ContactComponent } from './components/main/contact/contact.component';
+import { HomeComponent } from './components/main/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent,
     ProjectsComponent,
-    ResumeComponent
+    ResumeComponent,
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
