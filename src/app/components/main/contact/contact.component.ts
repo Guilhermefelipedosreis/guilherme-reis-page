@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Message } from './messages/message';
+import { MessageService } from './messages/message.service';
 
 @Component({
   selector: 'app-contact',
@@ -9,14 +11,21 @@ import { Message } from './messages/message';
 export class ContactComponent {
 
   message: Message = {
+
     name: '',
     email: '',
     phone: '',
     content: ''
   }
+  constructor(
+    private service: MessageService,
+    private router: Router) { }
 
   submit() {
-    alert('Message sent!')
+    this.service.create(this.message).subscribe(() => {
+      this.router.navigate(['/list-message'])
+    })
+
   }
 
 }

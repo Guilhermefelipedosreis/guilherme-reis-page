@@ -4,24 +4,24 @@
   </div>
   <div class="page-content">
     <p>Don't hesitate to use this form below for reaching me out for any questions, comments, or even to say hi! :)</p>
-    <form action="">
+    <form>
       <div class="mb-3">
         <label for="name" class="form-label">Name*</label>
-        <input type="text" class="form-control" id="name" placeholder="Please, insert your name here!">
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="message.name" placeholder="Please, insert your name here!">
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email*</label>
-        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="message.email" placeholder="name@example.com">
       </div>
       <div class="mb-3">
         <label for="phone" class="form-label">Phone*</label>
-        <input type="tel" class="form-control" id="phone" placeholder="(xxx) xxx-xxxx">
+        <input type="tel" class="form-control" id="phone" name="phone" [(ngModel)]="message.phone" placeholder="(xxx) xxx-xxxx">
       </div>
       <div class="mb-3">
         <label for="content" class="form-label">Message*</label>
-        <textarea class="form-control" id="content" rows="5" placeholder="Type your message here"></textarea>
+        <textarea class="form-control" id="content" name="content" rows="5" [(ngModel)]="message.content" placeholder="Type your message here"></textarea>
       </div>
-      <button type="submit" class="btn btn-secondary" (click)="submit() ">Submit</button>
+      <button  class="btn btn-secondary" (click)="submit()">Submit</button>
     </form>
   </div>
 </div>

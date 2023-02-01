@@ -1,0 +1,14 @@
+.card {
+  max-width: 400px;
+}
+
+.card-header {
+  background-color: rgb(202, 202, 202);
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}

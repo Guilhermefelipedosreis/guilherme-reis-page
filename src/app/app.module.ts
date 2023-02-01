@@ -9,6 +9,10 @@ import { ProjectsComponent } from './components/main/projects/projects.component
 import { ResumeComponent } from './components/main/resume/resume.component';
 import { ContactComponent } from './components/main/contact/contact.component';
 import { HomeComponent } from './components/main/home/home.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ListMessageComponent } from './components/main/contact/messages/list-message/list-message.component';
+import { MessageComponent } from './components/main/contact/messages/message/message.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +22,15 @@ import { HomeComponent } from './components/main/home/home.component';
     ProjectsComponent,
     ResumeComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    ListMessageComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
