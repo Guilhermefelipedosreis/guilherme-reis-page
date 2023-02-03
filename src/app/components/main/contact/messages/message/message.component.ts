@@ -1,5 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { Message } from '../message';
+import { MessageService } from './../message.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ListMessageComponent } from './../list-message/list-message.component';
+import { ResourceLoader } from '@angular/compiler';
 
 @Component({
   selector: 'app-message',
@@ -16,4 +20,16 @@ export class MessageComponent {
     content: 'to dentro de message/message.components'
   }
 
+  constructor(
+    private service: MessageService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
+
+
+  deleteMessage() {
+    this.service.delete(this.message).subscribe()
+    this.router.navigate(['/list-message'])
+
+  }
 }

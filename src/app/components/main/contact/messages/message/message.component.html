@@ -10,8 +10,7 @@
         <h6><strong>Message</strong></h6>
         <p>{{message.content}}</p>
         <div class="actions">
-          <button class="edit" routerLink="#"><i class="fa-solid fa-pencil"></i></button>
-          <button class="delete" routerLink="#"><i class="fa-solid fa-trash"></i></button>
+          <button class="delete" (click)="deleteMessage()"><i class="fa-solid fa-trash"></i></button>
         </div>
       </div>
     </div>

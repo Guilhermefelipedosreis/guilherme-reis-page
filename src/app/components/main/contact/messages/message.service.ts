@@ -2,12 +2,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Message } from './message';
+import { ListMessageComponent } from './list-message/list-message.component';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class MessageService {
+
 
   private API = 'http://localhost:8080/messages'
 
@@ -22,6 +24,12 @@ export class MessageService {
   create(message: Message): Observable<Message> {
     alert("Message sent!")
     return this.http.post<Message>(this.API, message)
+  }
+
+  delete(message: Message) {
+
+    const url = this.API + '/' + message.id
+    return this.http.delete<Message>(url)
   }
 
 }
