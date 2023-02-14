@@ -1,0 +1,29 @@
+.container {
+  max-width: 800px;
+}
+
+.page-header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.page-content {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3em;
+}
+
+.img-picture {
+  width: 180px;
+  margin: 0 10px 0 0;
+  float:left
+}
+
+.text {
+  font-size: 1.3em;
+  font-style: italic;
+}
