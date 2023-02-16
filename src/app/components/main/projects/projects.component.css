@@ -16,10 +16,15 @@
   padding-bottom: 3em;
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 .projects li {
   display: inline-block;
   text-align: center;
   width: 47%;
+  height: 250px;
   vertical-align: top;
   margin: 0 1.5%;
   padding: 30px 20px;
@@ -46,13 +51,21 @@
   font-weight: bold;
 }
 
-.product-description {
+.project-description {
   font-size: 18px;
 }
 
-.product-price {
-  text-align: bottom;
-  font-size: 25px;
-  font-weight: bold;
-  margin-top: 10px;
+@media screen and (max-width: 710px) {
+
+.projects {
+  width: 100%;
+}
+
+.projects li {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 0 auto 12px;
+}
+
 }

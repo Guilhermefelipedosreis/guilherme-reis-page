@@ -1,26 +1,39 @@
 header {
-  background-color: #333652;
+  height: 100px;
   font-family: 'Bakbak One', cursive;
 }
 
-.container {
-
+.container-fluid {
+  background-color: #333652;
   height: 100px;
+  padding: 0 14px;
 }
 
 img {
   width: auto;
   height: 100px;
+  padding: 0 12px;
 }
 
 nav {
-
-  padding-top: 35px;
+  padding: 0;
   font-size: x-large;
 }
 
-.items li {
-  display: inline;
+.navbar-toggler {
+  border: none;
+}
+
+
+.fa-bars {
+  color: #e9eaec;
+}
+
+.navbar-nav {
+  --bs-nav-link-hover-color: #e9eaec;
+}
+
+.navbar-nav li {
   color: #e9eaec;
 }
 
@@ -32,3 +45,11 @@ a {
 a:hover {
   color: #c6c6c6;
 }
+
+.external-links a {
+  display: inline;
+  padding: 8px;
+}
+
+
+

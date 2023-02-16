@@ -1,9 +1,7 @@
 import { Component, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Message } from '../message';
 import { MessageService } from './../message.service';
-import { ActivatedRoute, Router } from '@angular/router';
-import { ListMessageComponent } from './../list-message/list-message.component';
-import { ResourceLoader } from '@angular/compiler';
 
 @Component({
   selector: 'app-message',
@@ -28,8 +26,11 @@ export class MessageComponent {
 
 
   deleteMessage() {
-    this.service.delete(this.message).subscribe()
-    this.router.navigate(['/list-message'])
+    this.service.delete(this.message).subscribe(() => {
+      window.location.reload()
+    })
+
+
 
   }
 }

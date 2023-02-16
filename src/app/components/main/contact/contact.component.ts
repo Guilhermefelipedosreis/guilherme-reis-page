@@ -23,7 +23,7 @@ export class ContactComponent {
 
   submit() {
     this.service.create(this.message).subscribe(() => {
-      this.router.navigate(['/list-message'])
+      window.location.reload()
     })
 
   }
