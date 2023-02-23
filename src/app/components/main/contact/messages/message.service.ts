@@ -10,6 +10,7 @@ import { Message } from './message';
 export class MessageService {
 
 
+
   private API = 'http://localhost:8080/messages'
 
 
@@ -29,6 +30,17 @@ export class MessageService {
 
     const url = this.API + '/' + message.id
     return this.http.delete<Message>(url)
+  }
+
+  send(message: Message) {
+    const data = {
+      name: message.name,
+      email: message.email,
+      phone: message.phone,
+      content: message.content
+    }
+    console.log(JSON.stringify(data))
+    return this.http.post("https://formsubmit.co/el/ruxiyu", JSON.stringify(data))
   }
 
 }

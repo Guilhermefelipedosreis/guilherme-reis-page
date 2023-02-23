@@ -11,21 +11,19 @@ import { MessageService } from './messages/message.service';
 export class ContactComponent {
 
   message: Message = {
-
     name: '',
     email: '',
     phone: '',
     content: ''
   }
+
   constructor(
     private service: MessageService,
     private router: Router) { }
 
   submit() {
-    this.service.create(this.message).subscribe(() => {
-      window.location.reload()
-    })
+    this.service.send(this.message).subscribe()
+    window.location.reload()
 
   }
-
 }

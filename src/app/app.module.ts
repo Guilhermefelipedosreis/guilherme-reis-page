@@ -12,7 +12,7 @@ import { HomeComponent } from './components/main/home/home.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ListMessageComponent } from './components/main/contact/messages/list-message/list-message.component';
 import { MessageComponent } from './components/main/contact/messages/message/message.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
