@@ -13,6 +13,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ListMessageComponent } from './components/main/contact/messages/list-message/list-message.component';
 import { MessageComponent } from './components/main/contact/messages/message/message.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ThankYouComponent } from './components/main/thank-you/thank-you.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     HomeComponent,
     ListMessageComponent,
-    MessageComponent
+    MessageComponent,
+    ThankYouComponent
   ],
   imports: [
     BrowserModule,

@@ -2,9 +2,16 @@
   <div class="page-header">
     <H1>List of Messages</H1>
   </div>
+  <div *ngIf="listMessage.length > 0, else noMessage"></div>
   <section class="row row-cols-1 row-cols-md-2 g-4">
       <div *ngFor="let message of listMessage">
         <app-message [message]="message"></app-message>
       </div>
+      <ng-template #noMessage>
+        <div class="restricted">
+          <h2>Restricted Access</h2>
+          <p>How did you get here? haha</p>
+        </div>
+      </ng-template>
   </section>
 </div>

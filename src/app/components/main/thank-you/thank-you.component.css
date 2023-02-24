@@ -1,0 +1,16 @@
+.page-content {
+text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5em;
+  padding-bottom: 3em;
+}
+
+.thank-you {
+  font-style: italic;
+}
+
+.content {
+  font-size: large;
+}
+

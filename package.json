@@ -1,6 +1,8 @@
 {
-  "name": "guilherme-reis-page",
-  "version": "0.0.0",
+  "name": "hostinger-angular",
+ "homepage": "https://guireis.net",
+ "version": "1.0.0",
+ "description": "my angular application",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

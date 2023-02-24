@@ -5,6 +5,7 @@ import { ListMessageComponent } from './components/main/contact/messages/list-me
 import { HomeComponent } from './components/main/home/home.component';
 import { ProjectsComponent } from './components/main/projects/projects.component';
 import { ResumeComponent } from './components/main/resume/resume.component';
+import { ThankYouComponent } from './components/main/thank-you/thank-you.component';
 
 const routes: Routes = [
   {
@@ -30,7 +31,11 @@ const routes: Routes = [
   },
   {
   path: 'list-message',
-  component: ListMessageComponent
+  component: ListMessageComponent,
+  },
+  {
+    path: 'thank-you',
+    component: ThankYouComponent,
   }
 
 ];

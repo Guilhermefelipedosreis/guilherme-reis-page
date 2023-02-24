@@ -21,7 +21,7 @@ export class ContactComponent {
     private service: MessageService,
     private router: Router) { }
 
-  submit() {
+  potatos() {
     this.service.send(this.message).subscribe()
     window.location.reload()
 
