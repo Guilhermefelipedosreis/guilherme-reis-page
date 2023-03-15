@@ -3,23 +3,9 @@
     {
       "id": 1,
       "name": "Gui",
-      "email": "guilhermefelipedosreis@hotmail.com",
-      "phone": "(647) 446 5034",
+      "email": "email@email",
+      "phone": "(000) 000 0000",
       "content": "testing"
-    },
-    {
-      "id": 2,
-      "name": "Talita",
-      "email": "talyPerassol@gmail.com",
-      "phone": "(647) 554 5034",
-      "content": "Hi there, I'm also testing!"
-    },
-    {
-      "id": 3,
-      "name": "Gui",
-      "email": "guilhermefelipedosreis@hotmail.com",
-      "phone": "(647) 446 5034",
-      "content": "How is it going buddy? It's me again."
     }
   ]
 }

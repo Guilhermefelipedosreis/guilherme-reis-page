@@ -20,7 +20,9 @@ ul {
   padding-inline-start: 0;
 }
 
+
 .projects li {
+  color: black;
   display: inline-block;
   text-align: center;
   width: 47%;
